@@ -1,10 +1,14 @@
 html {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+body {
+  margin: 0;
 }
 
 .img-flex {
@@ -19,9 +23,10 @@ html {
 }
 
 .banner-content {
+  float: right;
   position: absolute;
   left: 50%;
-  bottom: 0;
+  top: 0;
   transform: translateX(-50%);
   width: 100%;
   max-width: 50em;
@@ -35,19 +40,20 @@ html {
   float: left;
 }
 
-.text {
-}
-
 .btn {
   display: inline-block;
   text-decoration: none;
   font-size: 1.125rem;
   color: #fff;
   background-color: #333;
-  padding:0.5em 0.75em;
+  padding: .5em .75em;
   border-radius: 8px;
 }
 
 .btn-big {
   font-size: 1.5rem;
+}
+
+.btn:hover {
+  background-color: #000;
 }
